@@ -63,7 +63,7 @@ class HomeController extends Controller
         $slider3 = BeritaDesa::orderBy('id_berita', 'DESC')->first();
 
         $unggulan = ObjekWisata::where('isUnggulan', '=', 1)->take(3)->get();
-        $paket = PaketWisata::orderBy('id_pkt_wisata', 'DESC')->take(3)->get();
+        $list = BeritaDesa::orderBy('id_berita', 'DESC')->take(3)->get();
         $kategori = KategoriWisata::take(6)->get();
 
         if (Auth::check() && (Role::find(Auth::user()->role_id)->nama_role == 'admin' || Role::find(Auth::user()->role_id)->nama_role == 'super_admin' || Role::find(Auth::user()->role_id)->nama_role == 'author')) {
@@ -75,7 +75,7 @@ class HomeController extends Controller
                     'slider2',
                     'slider3',
                     'unggulan',
-                    'paket',
+                    'list',
                     'kategori',
                     // 'count',
                     // 'count2',
@@ -94,7 +94,7 @@ class HomeController extends Controller
         $slider3 = BeritaDesa::orderBy('id_berita', 'DESC')->first();
 
         $unggulan = ObjekWisata::where('isUnggulan', '=', 1)->take(3)->get();
-        $paket = PaketWisata::orderBy('id_pkt_wisata', 'DESC')->take(3)->get();
+        $list = BeritaDesa::orderBy('id_berita', 'DESC')->take(3)->get();
 
         $kategori = KategoriWisata::take(6)->get();
 
@@ -104,7 +104,7 @@ class HomeController extends Controller
                 'slider2',
                 'slider3',
                 'unggulan',
-                'paket',
+                'list',
                 'kategori',
                 // 'count'
             ));
