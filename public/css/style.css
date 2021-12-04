@@ -1,0 +1,507 @@
+@import "font.css";
+
+.overme {
+    height: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    white-space: normal;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.background1 {
+    background-color: #F7F7F7;
+    /*width: 100%*/
+}
+
+.icon-adv {
+    background-image: url("/icons/inspirasi/Adventure-01.svg");
+}
+
+.icon-previous {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: no-repeat 50%/100% 100%;
+}
+
+.icon-previous {
+    background-image: url("/icons/svg/icon-previous.svg");
+}
+
+.icon-previous:hover {
+    color: blue;
+}
+
+.icon-next {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: no-repeat 50%/100% 100%;
+}
+
+.icon-next {
+    background-image: url("/icons/svg/icon-next.svg");
+}
+
+.icon-previous:hover {
+    color: blue;
+}
+
+/*CAROUSEL PADA PAKET WISATA*/
+.carousel-style {
+    /*position: center;*/
+    /*margin-left: 30px;*/
+    /*padding-right: 60px;*/
+    height: 350px;
+    object-fit: cover; /* cover, contain, fill, scale-down */
+    object-position: center;
+}
+
+.carousel-paket {
+    color: black;
+    font-family: "BubblegumSans-Regular";
+    font-size: 24pt;
+    height: 45px;
+    overflow: hidden;
+}
+
+.carousel-paket-capt {
+    color: black;
+    font-family: "BentonSans Medium";
+    font-size: 16pt;
+}
+
+.carousel-in {
+    position: absolute;
+    right: 30%;
+    left: 30%;
+    top: 20%;
+    max-width: 500px;
+    /*bottom: 20%;*/
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 80px !important;
+    background: rgb(247, 247, 247, 0.5);
+    display: block;
+    margin-left: auto;
+    /*margin-top: 50px;*/
+    margin-right: auto;
+    border-style: double;
+    border-width: 7px;
+    border-color: black;
+}
+
+/*CARD PADA PAKET WISATA*/
+
+.card-in {
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    top: 10%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 80px !important;
+    background: rgb(247, 247, 247, 0.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-width: 5px;
+    border-color: black;
+}
+
+.card-paket {
+    font-family: 'BubblegumSans-Regular';
+    font-size: 16pt;
+    text-align: center;
+    opacity: 5;
+    color: #000000;
+    height: 30px;
+    overflow: hidden;
+}
+
+.card-paket-capt {
+    color: black;
+    font-family: "BentonSans Medium";
+    font-size: 12pt;
+}
+
+/*CARD PADA KATEGORI WISATA*/
+
+.card-kategori {
+    font-family: 'BentonSans Regular';
+    font-size: 12pt;
+    color: #1D69BE;
+    text-align: center;
+    text-transform: uppercase !important;
+}
+
+.card-kategori-capt {
+    color: black;
+    font-family: "BentonSans Medium";
+    font-size: 6pt;
+}
+
+.card-img2 {
+    width: 100%;
+    height: 230px;
+    max-height: 230px;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-title2 {
+    color: black;
+    font-family: "BentonSans Medium";
+    font-size: 14pt;
+    height: 58px;
+    overflow: hidden;
+    margin-top: 10px;
+    /*text-align: center;*/
+}
+
+.card-title-home {
+    color: black;
+    font-family: "BentonSans Medium";
+    font-size: 14pt;
+    height: 55px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    /*text-align: center;*/
+}
+
+.card-title-home:hover, .card-title2:hover {
+    color: #0056b3;
+    text-decoration: underline
+}
+
+.card-caption {
+    font-family: 'BentonSans Regular';
+    color: #000000 !important;
+    font-size: 12pt;
+    height: 100px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    /*text-align: center;*/
+}
+
+.card-caption-home {
+    font-family: 'BentonSans Regular';
+    font-size: 12pt;
+    height: 100px;
+    overflow: hidden;
+    color: #000000 !important;
+    margin-bottom: 10px;
+    /*text-align: center;*/
+}
+
+.card-caption-3baris {
+    font-family: 'BentonSans Regular';
+    font-size: 12pt;
+    height: 75px;
+    overflow: hidden;
+    color: #000000 !important;
+    /*margin-bottom: 10px;*/
+    /*text-align: center;*/
+}
+
+.card-link {
+    padding-bottom: 10px;
+
+    color: #007bff;
+}
+
+.card-caption-home-kat {
+    font-family: 'BentonSans Regular';
+    font-size: 11pt;
+
+    color: #007bff;
+    /*text-align: center;*/
+}
+
+/*DETAIL PAKET WISATA*/
+
+.detail-title {
+    font-family: 'BentonSans Medium';
+    font-size: 16pt;
+    /*text-align: center;*/
+
+    color: #1D69BE;
+    display: block;
+    margin-top: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-body {
+    font-family: 'BentonSans Regular';
+    font-size: 12pt;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+
+/*OTHER*/
+
+.nama-desa {
+    font-family: 'BentonSans Bold';
+    font-size: 15pt;
+    /*text-transform: uppercase;*/
+    width: 100%;
+    text-align: center;
+    /*padding: 20px;*/
+}
+
+.title {
+    font-family: 'BentonSans Bold';
+    font-size: 20pt;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.sub-title {
+    font-family: 'BentonSans Bold';
+    font-size: 12pt;
+    text-transform: uppercase;
+    width: 100%;
+    color: #000000
+    /*padding: 20px;*/
+}
+
+.slider-title {
+    font-family: 'BentonSans Bold';
+    font-size: 20pt;
+    text-transform: uppercase;
+    width: 100%;
+    /*color: #000000*/
+    /*padding: 20px;*/
+}
+
+.btn-new {
+    font-family: 'BentonSans Medium';
+    font-size: 16pt;
+    color: #F7F7F7;
+    background-color: #358ED7;
+    border-radius: 0em !important;
+    /*width: 60%;*/
+    table-layout: fixed;
+    border-collapse: collapse;
+    object-position: center;
+}
+
+.btn-new-remove {
+    font-family: 'BentonSans Medium';
+    font-size: 16pt;
+    color: #F7F7F7;
+    background-color: #dc3545;
+    border-radius: 0em !important;
+    /*width: 60%;*/
+    table-layout: fixed;
+    border-collapse: collapse;
+    object-position: center;
+}
+
+.btn-new-secondary {
+    font-family: 'BentonSans Medium';
+    font-size: 10pt;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #F7F7F7;
+    /*text-transform: uppercase;*/
+    border-radius: 0em !important;
+    /*width: 60%;*/
+    table-layout: fixed;
+    border-collapse: collapse;
+    object-position: center;
+}
+
+.btn-new-lihat {
+    font-family: 'BentonSans Medium';
+    font-size: 10pt;
+    color: #F7F7F7;
+    background-color: #38c172;
+    border-radius: 0em !important;
+    /*width: 60%;*/
+    table-layout: fixed;
+    border-collapse: collapse;
+    object-position: center;
+}
+
+.btn-new:hover {
+    background-color: #61ABF3;
+    color: #F7F7F7 !important;
+}
+
+.btn-new:focus {
+    background-color: #0757A6;
+}
+
+.btn-new-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-new-secondary:focus {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.btn-new-lihat:hover {
+    color: #fff;
+    background-color: #2fa360;
+    border-color: #2d995b;
+}
+
+.btn-new-lihat:focus {
+    color: #fff;
+    background-color: #2fa360;
+    border-color: #2d995b;
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.btn-new-remove:hover {
+    color: #fff;
+    background-color: #d0211c;
+    border-color: #c51f1a;
+}
+
+.btn-new-remove:focus {
+    color: #fff;
+    background-color: #d0211c;
+    border-color: #c51f1a;
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.foto-title {
+    color: black;
+    font-family: "BentonSans Medium";
+    font-size: 16pt;
+    height: 70px;
+    overflow: hidden;
+    /*text-transform: uppercase;*/
+}
+
+.foto-in {
+    position: absolute;
+    right: 2%;
+    left: 2%;
+    top: 35%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 80px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto-caption {
+    color: #F7F7F7;
+    font-family: "BentonSans Medium";
+    font-size: 16pt;
+    height: 70px;
+    overflow: hidden;
+    /*text-transform: uppercase;*/
+}
+
+.link-galeri {
+    color: #358ED7;
+    font-family: "BentonSans Medium";
+    font-size: 8pt;
+    /*padding: 10px;*/
+    text-decoration: underline;
+}
+
+.link-paket {
+    color: #358ED7;
+    font-family: "BentonSans Regular";
+    font-size: 12pt;
+    /*padding: 10px;*/
+    text-decoration: underline;
+}
+
+.link-galeri:hover, .link-paket:hover {
+    color: #61ABF3;
+}
+
+.link-galeri:focus, .link-paket:focus {
+    color: #0757A6;
+}
+
+/*Galeri berdasarkan aktivitas*/
+.single-img {
+    /*margin-left: 30px;*/
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+}
+
+.single-img-detail {
+    /*margin-left: 30px;*/
+    width: 80%;
+    /*height: 230px;*/
+    object-fit: cover;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+.page-new {
+    margin-left: 10px;
+    font-family: 'BentonSans Bold';
+
+}
+
+.page-new:focus {
+
+}
+
+.table-style {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-title {
+    font-family: 'BentonSans Regular';
+    color: #1D69BE;
+    font-size: 12pt;
+    border-bottom: 1px solid black;
+    height: 3em;
+}
+
+.table-content {
+    font-family: 'BentonSans Regular';
+    font-size: 12pt;
+    border-bottom: 1px solid black;
+    height: 3em;
+}
+
+.alert-font {
+    font-family: "BentonSans Medium";
+    font-size: 12pt;
+}
